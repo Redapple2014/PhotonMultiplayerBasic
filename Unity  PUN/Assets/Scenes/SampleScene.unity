@@ -720,7 +720,6 @@ MonoBehaviour:
   CreateRoomPanel: {fileID: 4037365027651140861}
   RoomNameInputField: {fileID: 4037365027513726579}
   MaxPlayersInputField: {fileID: 4037365028239481084}
-  JoinRandomRoomPanel: {fileID: 0}
   RoomListPanel: {fileID: 1163743517}
   _roomContentParent: {fileID: 670754905}
   _roomListings: {fileID: 151708061308595483, guid: 9da695a75dcfa43fc950525baa57b61e, type: 3}
