@@ -1,0 +1,2 @@
+/Users/redapple/Desktop/Pramod/Unity  PUN/obj/Debug/PhotonUnityNetworking.csprojAssemblyReference.cache
+/Users/redapple/Desktop/Pramod/Unity  PUN/obj/Debug/PhotonUnityNetworking.csproj.CoreCompileInputs.cache
