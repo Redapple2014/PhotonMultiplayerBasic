@@ -714,7 +714,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsSyncScene: 1
   CloseRoomAfterGameStart: 0
-  LoginPanel: {fileID: 4037365029164344838}
+  LoginPanel: {fileID: 606953626}
   PlayerNameInput: {fileID: 4037365028729085653}
   SelectionPanel: {fileID: 2027588197}
   CreateRoomPanel: {fileID: 4037365027651140861}
@@ -758,6 +758,7 @@ GameObject:
   - component: {fileID: 473185440}
   - component: {fileID: 473185439}
   - component: {fileID: 473185438}
+  - component: {fileID: 473185441}
   m_Layer: 5
   m_Name: ShowRoom
   m_TagString: Untagged
@@ -828,19 +829,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 473185439}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 383637271}
-        m_TargetAssemblyTypeName: NetworkManager, Assembly-CSharp
-        m_MethodName: ShowRoomList
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: DemoWorker
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &473185439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -879,6 +868,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 473185436}
   m_CullTransparentMesh: 1
+--- !u!114 &473185441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473185436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a05bce7b5fc4e7e87bdf9bc7518d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomName: {fileID: 0}
+  buttonType: 3
 --- !u!1 &606953626
 GameObject:
   m_ObjectHideFlags: 0
@@ -2327,7 +2330,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Host Room
+  m_Text: Room Details
 --- !u!222 &1650969720
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2506,8 +2509,9 @@ GameObject:
   - component: {fileID: 1913906403}
   - component: {fileID: 1913906402}
   - component: {fileID: 1913906401}
+  - component: {fileID: 1913906404}
   m_Layer: 5
-  m_Name: Host_Game_Btn
+  m_Name: RoomInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2576,31 +2580,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1913906402}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2027588197}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: CreateRoomPanel
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4037365027651140861}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1913906402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2639,6 +2619,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1913906399}
   m_CullTransparentMesh: 1
+--- !u!114 &1913906404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913906399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a05bce7b5fc4e7e87bdf9bc7518d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomName: {fileID: 0}
+  buttonType: 1
 --- !u!1 &1989105053
 GameObject:
   m_ObjectHideFlags: 0
@@ -2915,6 +2909,7 @@ GameObject:
   - component: {fileID: 2069935348}
   - component: {fileID: 2069935347}
   - component: {fileID: 2069935346}
+  - component: {fileID: 2069935349}
   m_Layer: 5
   m_Name: Join/Create RandomRoom
   m_TagString: Untagged
@@ -2985,19 +2980,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2069935347}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 383637271}
-        m_TargetAssemblyTypeName: NetworkManager, Assembly-CSharp
-        m_MethodName: JoinRandomRoom
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: DemoWorker
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2069935347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3036,6 +3019,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069935344}
   m_CullTransparentMesh: 1
+--- !u!114 &2069935349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069935344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a05bce7b5fc4e7e87bdf9bc7518d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomName: {fileID: 0}
+  buttonType: 2
 --- !u!1 &2079406677
 GameObject:
   m_ObjectHideFlags: 0
@@ -3147,6 +3144,7 @@ GameObject:
   - component: {fileID: 4037365027436172989}
   - component: {fileID: 4037365027436172990}
   - component: {fileID: 4037365027436172991}
+  - component: {fileID: 4037365027436172986}
   m_Layer: 5
   m_Name: CreateRoomButton
   m_TagString: Untagged
@@ -3154,6 +3152,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4037365027436172986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4037365027436172985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a05bce7b5fc4e7e87bdf9bc7518d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomName: {fileID: 4037365029317672666}
+  buttonType: 4
 --- !u!222 &4037365027436172989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3235,19 +3247,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4037365027436172990}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 383637271}
-        m_TargetAssemblyTypeName: NetworkManager, Assembly-CSharp
-        m_MethodName: CreateRoom
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &4037365027483802776
 GameObject:
   m_ObjectHideFlags: 0
@@ -3741,6 +3741,7 @@ GameObject:
   - component: {fileID: 4037365028230920760}
   - component: {fileID: 4037365028230920761}
   - component: {fileID: 4037365028230920762}
+  - component: {fileID: 4037365028230920710}
   m_Layer: 5
   m_Name: LoginButton
   m_TagString: Untagged
@@ -3748,6 +3749,20 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4037365028230920710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4037365028230920709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31a05bce7b5fc4e7e87bdf9bc7518d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RoomName: {fileID: 0}
+  buttonType: 0
 --- !u!222 &4037365028230920760
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3829,19 +3844,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4037365028230920761}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 383637271}
-        m_TargetAssemblyTypeName: NetworkManager, Assembly-CSharp
-        m_MethodName: LoginToServer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: DemoWorker
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!222 &4037365028239481074
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 7532413611147312169}
   - component: {fileID: 7532413611121873553}
   - component: {fileID: 7532413611121892265}
-  - component: {fileID: 7532413611121953419}
+  - component: {fileID: 5319720751777541623}
   m_Layer: 5
   m_Name: JoinRoomButton
   m_TagString: Untagged
@@ -317,7 +317,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7532413611121953419
+--- !u!114 &5319720751777541623
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -326,17 +326,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7532413611127466931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Script: {fileID: 11500000, guid: 31a05bce7b5fc4e7e87bdf9bc7518d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreLayout: 0
-  m_MinWidth: 100
-  m_MinHeight: -1
-  m_PreferredWidth: 100
-  m_PreferredHeight: -1
-  m_FlexibleWidth: -1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
+  RoomName: {fileID: 7532413611121897071}
+  buttonType: 5
 --- !u!1 &7532413611127482243
 GameObject:
   m_ObjectHideFlags: 0

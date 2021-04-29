@@ -31,7 +31,7 @@ namespace Photon.Pun.Demo.Cockpit
         [Serializable]
         public class FriendDetail
         {
-            public FriendDetail(string NickName, string UserId)
+            public FriendDetail(string NickName, string UserId) { 
                 this.NickName = NickName;
                 this.UserId = UserId;
             }

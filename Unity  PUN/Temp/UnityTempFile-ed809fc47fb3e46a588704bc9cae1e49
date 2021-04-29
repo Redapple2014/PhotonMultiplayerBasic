@@ -1,15 +1,15 @@
 /target:library
-/out:"Temp/Assembly-CSharp-Editor.dll"
+/out:"Temp/PunDemos.DemoSlotcarEditor.dll"
 /nowarn:0169
 /nowarn:0649
-/refout:"Temp/Assembly-CSharp-Editor.dll.ref"
+/refout:"Temp/PunDemos.DemoSlotcarEditor.dll.ref"
 /deterministic
 /debug:portable
 /optimize-
 /nostdlib+
 /preferreduilang:en-US
 /langversion:8.0
-/reference:"Library/ScriptAssemblies/Assembly-CSharp.dll"
+/reference:"Library/ScriptAssemblies/PhotonUnityNetworking.Demos.dll"
 /reference:"/Applications/Unity/Hub/Editor/2020.2.3f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
 /reference:"/Applications/Unity/Hub/Editor/2020.2.3f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll"
 /reference:"/Applications/Unity/Hub/Editor/2020.2.3f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll"
@@ -206,26 +206,9 @@
 /reference:"/Applications/Unity/Hub/Editor/2020.2.3f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll"
 /reference:"/Applications/Unity/Hub/Editor/2020.2.3f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
 /reference:"/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
-/reference:"/Users/redapple/Desktop/Pramod/Unity  PUN/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+/reference:"/Users/redapple/Documents/UnityProjects/PhotonMultiplayerBasic/Unity  PUN/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 /reference:"Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll"
 /reference:"Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll"
-/reference:"Library/ScriptAssemblies/PhotonChat.dll"
-/reference:"Library/ScriptAssemblies/PhotonRealtime.dll"
-/reference:"Library/ScriptAssemblies/PhotonUnityNetworking.Demos.dll"
-/reference:"Library/ScriptAssemblies/PhotonUnityNetworking.Editor.dll"
-/reference:"Library/ScriptAssemblies/PhotonUnityNetworking.Utilities.Culling.Editor.dll"
-/reference:"Library/ScriptAssemblies/PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.dll"
-/reference:"Library/ScriptAssemblies/PhotonUnityNetworking.Utilities.dll"
-/reference:"Library/ScriptAssemblies/PhotonUnityNetworking.dll"
-/reference:"Library/ScriptAssemblies/PunDemos.DemoHubEditor.dll"
-/reference:"Library/ScriptAssemblies/PunDemos.DemoSlotcarEditor.dll"
-/reference:"Library/ScriptAssemblies/Unity.Rider.Editor.dll"
-/reference:"Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll"
-/reference:"Library/ScriptAssemblies/Unity.TextMeshPro.dll"
-/reference:"Library/ScriptAssemblies/Unity.Timeline.Editor.dll"
-/reference:"Library/ScriptAssemblies/Unity.Timeline.dll"
-/reference:"Library/ScriptAssemblies/Unity.VSCode.Editor.dll"
-/reference:"Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll"
 /reference:"Library/ScriptAssemblies/UnityEditor.TestRunner.dll"
 /reference:"Library/ScriptAssemblies/UnityEditor.UI.dll"
 /reference:"Library/ScriptAssemblies/UnityEngine.TestRunner.dll"
@@ -341,4 +324,6 @@
 /define:UNITY_TEAM_LICENSE
 /define:UNITY_UNITYADS_API
 /define:USE_SEARCH_ENGINE_API
-"Assets/Editor/PhotonEditorScript.cs"
+"Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Editor/BezierCurveInspector.cs"
+"Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Editor/BezierSplineInspector.cs"
+"Assets/Photon/PhotonUnityNetworking/Demos/DemoSlotRacer/Scripts/BezierCurve/Editor/LineInspector.cs"

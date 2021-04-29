@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using Photon.Pun;
 using Photon.Realtime;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -60,6 +61,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     //Contects to master Server
     public void LoginToServer()
     {
+        Debug.Log("Entered");
         string playerName = PlayerNameInput.text;
 
         if (!playerName.Equals(""))
@@ -79,15 +81,25 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     /// Allows you to create room on the server
     /// callbacks-OncreatedRoom / OnjoinedRoom/OnCreateRoomFailed
     /// </summary>
-    public void CreateRoom()
+    public void CreateRoom(string roomName=null)
     {
+        if(roomName==null)
+        {
+            roomName = "RoomName" + Random.Range(1000, 9999);
+        }
         RoomOptions roomOptions = new RoomOptions
         {
             MaxPlayers = byte.Parse(this.MaxPlayersInputField.text)
         };
-        PhotonNetwork.CreateRoom(RoomNameInputField.text, roomOptions, TypedLobby.Default);
+        PhotonNetwork.CreateRoom(roomName, roomOptions, TypedLobby.Default);
 
     }
+
+    public void OnCreateRoomBtnClicked()
+    {
+        ToggleScreen("CreateRoomPanel");
+    }
+
     /// <summary>
     /// Allows you to join to room on the server
     /// callbacks- OnjoinedRoom/OnjoinedRoomFailed
@@ -283,14 +295,16 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public override void OnLeftRoom()
     {
-        ToggleScreen("SelectionPanel");
+       // ToggleScreen("SelectionPanel");
         Debug.Log("You have left the room");
         foreach (PlayerDetails entry in playerDetails)
         {
+            if(entry!=null)
             Destroy(entry.gameObject);
         }
 
     }
     #endregion PUN CallBack
+       
 
 }
