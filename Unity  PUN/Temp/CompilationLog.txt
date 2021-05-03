@@ -1,8 +1,0 @@
-# Starting compiling PhotonUnityNetworking.Demos.dll
-/Applications/Unity/Hub/Editor/2020.2.3f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-cb1fbb42477d04eda87038ff464ac317
-# Starting compiling PunDemos.DemoSlotcarEditor.dll
-/Applications/Unity/Hub/Editor/2020.2.3f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-ed809fc47fb3e46a588704bc9cae1e49
-# Starting compiling Assembly-CSharp.dll
-/Applications/Unity/Hub/Editor/2020.2.3f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-46fd4aa653e3043d4b62c1fe5c6102a9
-# Starting compiling Assembly-CSharp-Editor.dll
-/Applications/Unity/Hub/Editor/2020.2.3f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-a7dc70dba0a074308b3df69df884635d
